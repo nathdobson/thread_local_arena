@@ -1,0 +1,8 @@
+[package]
+name = "scoped_arena"
+version = "0.1.0"
+authors = ["Nathan Dobson <nadobson@mac.com>"]
+license = "Apache-2.0"
+description = "A fast and easy-to-use arena allocator."
+
+[dependencies]
