@@ -1,8 +1,14 @@
 [package]
-name = "scoped_arena"
+name = "thread_local_arena"
 version = "0.1.0"
 authors = ["Nathan Dobson <nadobson@mac.com>"]
 license = "Apache-2.0"
 description = "A fast and easy-to-use arena allocator."
+repository = "https://github.com/nathdobson/thread_local_arena"
+
+[lib]
+name = "thread_local_arena"
+path = "src/lib.rs"
+
 
 [dependencies]
