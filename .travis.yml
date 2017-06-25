@@ -1,5 +1,6 @@
 language: rust
 rust:
-  - stable
-  - beta
+# TODO: add these when allocators land.
+#  - stable
+#  - beta
   - nightly

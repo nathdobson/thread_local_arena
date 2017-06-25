@@ -1,5 +1,7 @@
-thread_local_arena
-==================
+# thread_local_arena
+[![Build Status](https://travis-ci.org/nathdobson/thread_local_arena.svg?branch=master)](https://travis-ci.org/nathdobson/thread_local_arena)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 A fast and easy-to-use thread local arena allocator. Each standard
 heap-allocating type like Box and Vec should have a corresponding arena version
 like ArenaBox and ArenaVec. The Arena versions are typically faster for smaller
