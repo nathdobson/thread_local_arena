@@ -2,15 +2,13 @@ use test::Bencher;
 use alloc::allocator::Alloc;
 use alloc::raw_vec::RawVec;
 use alloc::heap::HeapAlloc;
-use arena::ArenaBlock;
 use arena::Arena;
-use scoped::ScopedArena;
 fn bench_rawvec<A: Alloc + Copy>(a: A) {
     let vec: Vec<_> = (0..1024 * 10).map(|_| RawVec::<usize, A>::with_capacity_in(10000, a)).collect();
 }
 #[bench]
 fn bench_rawvec_scoped_arena(b: &mut Bencher) {
-    b.iter(|| bench_rawvec(ScopedArena));
+    b.iter(|| bench_rawvec(Arena));
 }
 #[bench]
 fn bench_rawvec_heap(b: &mut Bencher) {

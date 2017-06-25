@@ -11,7 +11,7 @@ extern crate alloc;
 extern crate core;
 #[cfg(test)]
 extern crate test;
+mod owned_arena;
 mod arena;
-mod scoped;
 #[cfg(test)]
 mod bench;
